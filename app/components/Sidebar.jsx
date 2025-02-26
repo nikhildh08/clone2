@@ -201,7 +201,7 @@ export default function Sidebar() {
             className=" flex items-center space-x-2 text-white  p-2 rounded"
           >
             <i className="fa-solid fa-sliders"><IoSettingsOutline/></i>
-            <span>Settings</span>
+            <span>Setting</span>
           </Link>
         </li>
       </ul>
