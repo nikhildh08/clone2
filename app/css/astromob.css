@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #5c5a5a5c !important;
+    color: #000000;
+}
+
+.dash-header {
+    display: none;
+}
+
+.dash-asidebar {
+    transition: transform 0.3s ease;
+    top: 1rem;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+    position: sticky;
+}
+
+
+
+
+@media (320px <=width <=426px) {
+
+    .wave:nth-child(2),
+    .wave:nth-child(3) {
+        top: 170px;
+    }
+
+    .earn-cards-bx {
+        gap: 1.5rem;
+    }
+
+    .astro-header {
+        padding: 0;
+    }
+
+    .total-earn {
+        font-size: .8rem;
+        flex-direction: column;
+    }
+
+    .tot-amt {
+        font-size: 1rem;
+    }
+
+    .earn-button {
+        padding: .2rem .4rem;
+        font-size: .65rem;
+    }
+
+    .sp-ic-amt {
+        gap: .7rem;
+        flex-direction: row !important;
+    }
+
+    .earn-card {
+        width: 160px;
+        height: 90px;
+        flex-direction: column;
+        justify-content: space-evenly !important;
+    }
+
+    .astro-header .astro-in-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 8px 10px;
+        border-radius: 0px;
+    }
+
+    .astro-nav-links .astro-head-links {
+        font-size: 14px;
+        padding: .3rem .5rem;
+        border-radius: 8px;
+    }
+
+    .mob-n {
+        display: none;
+    }
+
+    .astro-nav-links {
+        gap: 10px;
+        position: relative;
+        position: visible;
+    }
+
+    .dash-header {
+        display: block;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .hamburger-menu {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .dash-asidebar {
+        transform: translateX(-100%);
+        width: 55%;
+        position: fixed;
+        justify-content: start;
+        gap: 2rem;
+        top: 0rem;
+    }
+
+    .star-rating-rev {
+        font-size: 20px;
+    }
+
+    .dash-asidebar.active {
+        transform: translateX(0);
+    }
+
+    .menu-dash {
+        gap: .3rem;
+    }
+
+    .mob-res-h-l {
+        gap: 1rem;
+    }
+
+    .dash-span-inp {
+        padding: .4rem .8rem;
+    }
+
+    .dash-inp {
+        width: 4rem;
+        font-size: .7rem;
+    }
+
+    .top-greet-h3 {
+        font-size: .8rem;
+        color: #2f1254;
+        margin-bottom: 0;
+    }
+
+    .name-dy {
+        font-size: 1.1rem;
+    }
+
+    .card-dash {
+        width: 165px;
+        height: 100px;
+    }
+
+    .card-h1 {
+        font-size: .85rem;
+        text-align: center;
+    }
+
+    .card-btn {
+        font-size: .65rem;
+        padding: 6px 8px;
+    }
+
+    .home-main-cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dash-foot {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+
+    .panel-access-box {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .wallet-head {
+        font-size: .8rem;
+        background-color: #2f1254;
+        border-radius: 10px;
+        color: #f5c518;
+        padding: .5rem 1rem;
+        width: fit-content;
+    }
+
+    .p-a-type {
+        font-size: .75rem;
+    }
+
+    .top-greet {
+        font-size: .75rem;
+    }
+
+    .card-panel-permi {
+        padding: 10px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-switch .form-check-input {
+        height: 1rem;
+        width: 2rem;
+    }
+
+    .online-type {
+        padding: .1rem .4rem;
+        font-size: .55rem;
+    }
+
+    .panel-access-card {
+        width: 100%;
+        padding: 1rem .5rem;
+    }
+
+    .astro-main-ser {
+
+        gap: 1rem;
+        padding: 1rem 0rem;
+    }
+
+    .dash-foot-ul {
+        padding-left: 0;
+    }
+
+    .dash-detail-box,
+    .dash-earn-box {
+        gap: 1rem;
+    }
+
+    .dash-main-content {
+        padding: 0 .6rem;
+    }
+
+    .panel-access-box {
+        flex-direction: column;
+    }
+
+    .sp-off {
+        gap: .5rem;
+    }
+
+    .set-card-dash {
+        width: 145px;
+        height: 110px;
+    }
+
+    .set-img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .card-box {
+        gap: 1rem;
+    }
+
+    .follow-card {
+        width: 100px;
+        height: 170px;
+        padding: .7rem 0;
+    }
+
+    .f-img {
+        padding: .6rem;
+        transform: scale(1);
+    }
+
+    .f-card-con {
+        padding: .3rem .4rem;
+    }
+
+    .top-fll-h3 {
+        font-size: .7rem;
+    }
+
+    .f-id,
+    .f-sm {
+        font-size: .6rem;
+    }
+
+    .follower-box {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .total-earn {
+        gap: .3rem;
+    }
+
+    .astrodash-img {
+        width: 100px !important;
+        height: 40px !important;
+    }
+
+    .button-tile {
+        width: 7rem;
+        height: 60px;
+        gap: 10px;
+        padding: .5rem .2rem;
+        font-size: .7rem;
+        flex-direction: column;
+    }
+
+    .svgIcon {
+        height: 15px;
+        transition-duration: 1.5s;
+    }
+
+    .dash-tile-card {
+        gap: .8rem;
+    }
+
+    .astro-time {
+        flex-direction: column;
+        font-size: .7rem;
+        padding: .5rem .1rem;
+        width: 8rem;
+    }
+
+    .astro-boost {
+        display: none !important;
+    }
+
+    .astro-report-assist {
+        gap: .5rem;
+    }
+
+    .card-main {
+        width: 23em;
+    }
+
+    .prop-top {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 47px; /* Adjust according to your layout */
+        right: 0rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px ;
+        z-index: 9999 !important;
+       
+      }
+      .up-ul{
+        list-style-type: none;
+        padding-left: 0;
+        width: 7rem;   
+        margin-bottom: 0;
+    
+      }
+      .fap{
+        font-size: .8rem;
+      }
+      .up-li{
+        font-size: .8rem;
+        padding: .2rem 0;
+      }
+
+
+
+}
+
+
+
+
+@media (377px <=width <=426px) {
+    .astro-time {
+        width: 11rem;
+    }
+
+    .card-dash {
+        width: 170px;
+    }
+
+    .card-main {
+        width: 23em;
+    }
+
+    .card-chat {
+        width: 48%;
+        height: 20.5rem !important;
+        box-shadow: 0px 0px 5px #ad80d597, 0px 0px 5px #ffffff;
+    }
+
+    .card-call {
+        box-shadow: 0px 0px 5px #ad80d597, 0px 0px 5px #ffffff;
+        width: 48%;
+        height: 20rem !important;
+    }
+
+    .card-store {
+        width: 47%;
+        height: 12rem !important;
+    }
+
+
+
+    .cal-pob,
+    .cal-prob {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+
+    .cal-od-id {
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .cal-od-str {
+        width: 100%;
+        gap: .1rem;
+    }
+
+    .store-top {
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .str-det {
+        padding: .2rem .3rem;
+        font-size: .55rem;
+    }
+
+    .cal-od-det {
+        justify-content: end !important;
+        align-self: flex-end;
+    }
+
+    .top-spn {
+        padding: .2rem .3rem;
+        font-size: .55rem;
+    }
+
+    .store-his-box {
+        gap: 1rem;
+    }
+
+    .prob-sp,
+    .prob-ans {
+        font-size: .55rem;
+    }
+
+    .call-dr {
+        flex-direction: column;
+    }
+
+    .cal-od-id {
+        flex-direction: row !important;
+        width: 100%;
+    }
+
+    .call-top {
+        flex-direction: column !important;
+        padding: 0rem 0rem;
+        gap: .2rem;
+    }
+
+    .live-main-content {
+        flex-direction: column !important;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .fl-rev {
+        flex-direction: row-reverse !important;
+    }
+
+    .l-s-button {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .new-ind-off,
+    .new-ind {
+        font-size: .65rem;
+        font-weight: 500;
+    }
+
+    .follower-box {
+        gap: 1rem;
+        padding: 0 .5rem;
+    }
+
+    .astro-follower {
+        padding: 10px;
+    }
+
+    .update-container,
+    .impnum-container {
+        top: 4rem;
+        left: 3rem;
+    }
+
+
+
+    .l-set-button {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .pri-lab {
+        font-size: .8rem;
+    }
+
+    .pri-input {
+        width: 100%;
+        gap: .2rem;
+    }
+
+    .sch-eve,
+    .live-eve {
+        font-size: .7rem;
+        height: 3rem;
+    }
+
+    .vid-sp {
+        font-size: .65rem;
+    }
+
+    .vid-con {
+        padding: .2rem;
+        gap: .2rem;
+    }
+
+    .tr-inp {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #000000;
+        font-size: .65rem;
+        letter-spacing: 1px;
+    }
+
+    .price-call {
+        width: 100%;
+    }
+
+    .astro-price {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .p1l {
+        font-size: .65rem;
+        font-weight: 500;
+    }
+
+    .p1r {
+        font-size: .7rem;
+    }
+
+    .profile-det {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .pro-cont-top {
+        flex-direction: column;
+        align-items: normal !important;
+    }
+
+    .t1 {
+        font-size: .7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fl-wr {
+        width: 50% !important;
+    }
+    .fl-wr-chk{
+        margin-top: 1rem;        width: 50% !important;
+    }
+    .skills-bl {
+        gap: .2rem;
+    }
+
+    .lb-nm {
+        font-size: .7rem;
+        margin-bottom: .2rem;
+    }
+
+    .price-main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 .6rem;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .ifr-vid {
+        width: 100%;
+        height: 146px;
+    }
+
+    .tr-vid-card {
+        width: 181px;
+        height: 233px;
+    }
+
+    .tr-vid-box {
+        gap: 1rem;
+    }
+
+    .both-field {
+        padding: 1rem .5rem;
+        gap: 1rem;
+    }
+
+    .follow-card {
+        width: 100px;
+    }
+
+    .call-card-det,
+    .call-rate {
+        flex-direction: column !important;
+    }
+
+    .id-nm,
+    .pob-ans,
+    .prob-ans {
+        font-size: .65rem;
+    }
+
+    .xtra-a {
+        border: 1px solid #ae80d5;
+        padding: .1rem .2rem;
+        font-size: .6rem;
+    }
+
+    .xtra-op {
+        gap: .2rem;
+    }
+
+    .calling-his-box {
+        gap: .8rem;
+    }
+
+    .earn-card {
+        width: 150px;
+    }
+
+    .wallet-top-line {
+        align-items: end !important;
+        flex-direction: column;
+    }
+
+    .wallet-ul {
+        gap: 1rem;
+        flex-wrap: wrap !important;
+        padding-left: 0;
+
+    }
+
+    .dash-f-li {
+        padding: .3rem;
+        background-color: #2f125467;
+        font-size: .6rem;
+        border-radius: 8px;
+    }
+
+    .wallet-select {
+        width: 30%;
+        font-size: .65rem;
+    }
+
+    .wallet-table {
+        padding: 10px 0 0 0;
+    }
+
+    .w-tb-th {
+        font-weight: 700;
+        font-size: .6rem;
+    }
+
+    .w-tr-th,
+    .w-tr-td {
+        font-size: .6rem;
+    }
+
+    .center-tr {
+        /* display: flex ; */
+        align-items: start;
+        justify-content: start;
+    }
+
+    .offer-main-content {
+        width: 100%;
+        display: flex;
+        padding: .5rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .pr-txt {
+        font-size: .65rem;
+        color: #000;
+    }
+
+    .card-rem {
+        width: 47%;
+        padding: .3rem;
+    }
+
+    .cal-od-rem {
+        gap: .5rem;
+    }
+
+    .panel-waitlist {
+        width: 45%;
+    }
+
+    .astro-main-wait {
+        gap: 1rem !;
+    }
+
+    .p-a-type {
+        font-size: .65rem;
+    }
+
+    .sp-waiting {
+        flex-direction: column;
+    }
+
+    .st-wait {
+        padding: .2rem .4rem;
+        font-size: .65rem;
+    }
+
+    .custom-select {
+        border-radius: 8px;
+        font-size: .7rem;
+        padding: .3rem .5rem;
+    }
+
+    .fl-spn {
+        font-size: .7rem;
+    }
+
+    .card-review {
+        border: 1px solid #00000018;
+        width: 47%;
+        padding: .3rem;
+        height: 19.5rem !important;
+    }
+
+    .cal-od-revi {
+        gap: .4rem;
+    }
+    .fl-txt{
+        width: 100%;
+    }
+    .sk-lbl {
+        font-size: .75rem !important;
+    }
+
+
+}
+
+
+@media (width <=377px) {
+    .wallet-table {
+        padding: 10px 0 0 0;
+    }
+
+    .center-tr {
+        /* display: flex ; */
+        align-items: start;
+        justify-content: start;
+    }
+
+    .w-tb-th {
+        font-weight: 700;
+        font-size: .6rem;
+    }
+
+    .panel-waitlist {
+        width: 45%;
+    }
+
+    .sp-waiting {
+        flex-direction: column;
+    }
+
+    .l-set-button {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .pro-cont-top {
+        flex-direction: column;
+        align-items: normal !important;
+    }
+
+    .t1 {
+        font-size: .65rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fl-wr {
+        width: 50% !important;
+    }
+
+    .vid-con {
+        padding: .2rem;
+        gap: .2rem;
+    }
+
+    .price-main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 .6rem;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .astro-price {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .p1l {
+        font-size: .65rem;
+        font-weight: 500;
+    }
+
+    .card-top-sm-box {
+        padding: 1rem 0;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .p1r {
+        font-size: .7rem;
+    }
+
+    .vid-sp {
+        font-size: .65rem;
+    }
+
+    .l-s-button {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .profile-det {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .lb-nm {
+        font-size: .7rem;
+        margin-bottom: .2rem;
+    }
+
+    .ifr-vid {
+        width: 100%;
+        height: 146px;
+    }
+
+
+
+    .tr-vid-box {
+        gap: .5rem;
+    }
+
+    .tr-vid-card {
+        width: 173px;
+        height: 233px;
+    }
+
+    .offer-main-content {
+        padding: .2rem .5rem;
+    }
+
+    .st-wait {
+        padding: .2rem .4rem;
+        font-size: .65rem;
+    }
+
+    .live-main-content {
+        flex-direction: column !important;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .sch-eve,
+    .live-eve {
+        font-size: .7rem;
+
+    }
+
+    .both-field {
+        padding: 1rem .5rem;
+        gap: 1rem;
+    }
+
+    .pri-lab {
+        font-size: .8rem;
+    }
+
+    .live-his {
+        padding: 1rem 0;
+    }
+
+    .card-dash {
+        width: 155px;
+        height: 100px;
+    }
+
+    .fl-rev {
+        flex-direction: row-reverse !important;
+        width: 100%;
+    }
+
+    .top-spn {
+        padding: .2rem .3rem;
+        font-size: .55rem;
+    }
+
+    .xtra-op {
+        gap: .2rem;
+        display: flex;
+        flex-wrap: wrap !important;    ;
+    }
+
+    .pr-txt {
+        font-size: .65rem;
+        color: #000;
+    }
+
+    .p-a-type {
+        font-size: .65rem;
+    }
+
+    .card-rem {
+        width: 47%;
+        padding: .3rem;
+    }
+
+    .astro-main-wait {
+        padding: .8rem;
+        gap: 1rem;
+    }
+
+    .follow-card {
+        width: 100px;
+    }
+
+    .follower-box {
+        gap: 1rem;
+        padding: 0 0rem;
+    }
+
+    .sch-eve,
+    .live-eve {
+        font-size: .7rem;
+        height: 3rem;
+    }
+
+    .update-container,
+    .impnum-container {
+        top: 4rem;
+        left: 3rem;
+    }
+
+    .wallet-top-line {
+        align-items: end !important;
+        flex-direction: column;
+    }
+
+    .wallet-ul {
+        gap: 1rem;
+        flex-wrap: wrap !important;
+        padding-left: 0;
+
+    }
+
+    .dash-f-li {
+        padding: .3rem;
+        background-color: #2f125467;
+        font-size: .6rem;
+        border-radius: 8px;
+    }
+
+    .wallet-select {
+        width: 30%;
+        font-size: .65rem;
+    }
+
+    .astro-follower {
+        padding: 10px;
+    }
+
+    .id-nm,
+    .pob-ans,
+    .prob-ans {
+        font-size: .55rem;
+    }
+
+    .custom-select {
+        border-radius: 8px;
+        font-size: .7rem;
+        padding: .3rem .5rem;
+    }
+
+    .fl-spn {
+        font-size: .7rem;
+    }
+
+    .call-dr {
+        flex-direction: column !important;
+    }
+
+    .earn-card {
+        width: 135px;
+    }
+
+    .call-card-det,
+    .call-rate {
+        flex-direction: column !important;
+    }
+
+    .card-main {
+        width: 100%;
+    }
+
+    .calling-his-box {
+        gap: .8rem !important;
+    }
+
+    .xtra-a {
+        border: 1px solid #ae80d5;
+        padding: .1rem .1rem;
+        font-size: .55rem;
+    }
+
+    .set-card-dash {
+        width: 140px;
+        height: 110px;
+    }
+
+    .astro-time {
+        width: 10rem;
+    }
+
+    .card-chat {
+        width: 48%;
+        height: 20.5rem !important;
+        box-shadow: 0px 0px 5px #ad80d597, 0px 0px 5px #ffffff;
+    }
+
+    .card-call {
+        box-shadow: 0px 0px 5px #ad80d597, 0px 0px 5px #ffffff;
+        width: 48%;
+        height: fit-content !important;
+    }
+
+    .card-store {
+        width: 47%;
+        height: 12rem !important;
+    }
+
+    .new-ind-off,
+    .new-ind {
+        font-size: .65rem;
+        font-weight: 500;
+    }
+
+    .store-his-box {
+        gap: 1rem;
+    }
+
+    .cal-od-str {
+        width: 100%;
+    }
+
+    .store-top {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .st-detail {
+        justify-content: flex-end !important;
+        align-content: flex-end;
+        align-self: flex-end;
+    }
+
+
+
+    .sp-ic-amt {
+        font-size: .8rem;
+    }
+
+    .astrodash-img {
+        width: 100px !important;
+        height: 40px !important;
+    }
+
+    .button-tile {
+        width: 6.2rem;
+    }
+
+    .card-review {
+        border: 1px solid #00000018;
+        width: 46%;
+        padding: .3rem;
+        height: 19.5rem !important;
+    }
+
+    .call-top {
+        flex-direction: column !important;
+        padding: 0rem 0rem;
+        gap: .2rem;
+    }
+
+    .cal-od-id {
+        flex-direction: row !important;
+        width: 100%;
+    }
+
+    .rev-his-box {
+        gap: 1rem !important;
+    }
+
+}
+
+@media (width <=320px) {
+    .card-dash {
+        width: 128px;
+        height: 100px;
+    }
+
+    .card-h1 {
+        font-size: .8rem;
+    }
+
+    .dash-foot-p {
+        font-size: .65rem;
+    }
+
+    .set-card-dash {
+        width: 110px;
+        height: 110px;
+    }
+
+    .card-btn {
+        font-size: .6rem;
+        padding: 4px 6px;
+    }
+
+    .dash-foot-ul {
+        gap: 1rem;
+    }
+
+    .star-rating-rev {
+        font-size: 20px;
+    }
+
+    .menu-dash-links {
+        font-size: .8rem;
+    }
+
+    .menu-dash-li {
+        padding: .6rem 1.1rem;
+    }
+
+    .top-greet {
+        font-size: .7rem;
+    }
+
+    .panel-access-box {
+        gap: .4rem;
+    }
+
+    .total-earn {
+        gap: .3rem;
+    }
+
+    .earn-card {
+        width: 115px;
+    }
+
+    .total-earn {
+        font-size: .7rem;
+    }
+
+    .infotop {
+        padding: 1rem .7rem;
+    }
+
+    .mob-res-h-l {
+        gap: .6rem;
+    }
+
+    .astrodash-img {
+        width: 100px !important;
+        height: 40px !important;
+    }
+
+    .sp-fl {
+        flex-direction: column;
+    }
+
+    .p-a-t {
+        width: 100%;
+
+    }
+
+    .sp-off {
+        gap: 0rem;
+    }
+
+    .bg-glass {
+        gap: .2rem;
+    }
+
+    .panel-access-card {
+        gap: .2rem;
+    }
+
+    .man-top {
+        gap: .5rem;
+    }
+}
