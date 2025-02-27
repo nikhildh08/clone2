@@ -1,0 +1,48 @@
+
+.container {
+    padding: 1rem;
+    /* position: fixed !important; */
+    top: 0;
+}
+
+.container .astrohead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    box-shadow: inset 3px 3px 10px #371c57, inset -3px -3px 10px #5e307d;
+    background-color: #2f1254;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.astronavlinks {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.astronavlinks .astroheadlinks {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding: .4rem .7rem;
+    background: #ffffff5c;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2), 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.astronavlinks .astroheadlinks:hover {
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 5px #bebebe, -1px -1px 5px #ffffff;
+}
+
+.astroprofile:hover {
+    transform: scale(1.08) translateY(-3px);
+}

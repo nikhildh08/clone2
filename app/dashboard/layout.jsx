@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar";
 import Footer from "../components/Footer";
-import TopBar from "../components/TopBar";
+import TopBar from "../components/navbar2/TopBar";
 
 export default function RootLayout({ children }) {
     return (
