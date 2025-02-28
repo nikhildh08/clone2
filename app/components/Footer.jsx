@@ -2,48 +2,20 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between w-[100%] mt-5 mx-0 my-0 items-start p-6 bg-[#2f1254] text-white">
-      {/* Left side (Copyright) */}
-      <div className="flex flex-col">
-        <p className="text-sm">
-          Copyright © 2023. Made with ❤️ by Dhwani Astro.
-        </p>
-      </div>
+    <footer className="dash-foot flex items-start justify-between ">
+    <div className="dash-foot-box">
+        <p className="dash-foot-p">Copyright © 2023. Made with ❤️ by Dhwani Astro.</p>
+    </div>
+    <div className="das-foot-links">
+        <ul className="dash-foot-ul flex ">
+            <li><Link href="#" className="dash-f-a">Cookies</Link></li>
+            <li><Link href="#" className="dash-f-a">Terms & Conditions</Link></li>
+            <li><Link href="#" className="dash-f-a">Privacy Policy</Link></li>
+            <li><Link href="#" className="dash-f-a">Support</Link></li>
 
-      {/* Right side (Footer links) */}
-      <div className="flex items-start space-x-6">
-        <ul className="flex space-x-6">
-          <li>
-            <Link href="#"
-               className="text-sm text-white hover:text-gray-400">
-                Cookies
-              
-            </Link>
-          </li>
-          <li>
-            <Link href="#"
-               className="text-sm text-white hover:text-gray-400">
-                Terms & Conditions
-              
-            </Link>
-          </li>
-          <li>
-            <Link href="#"
-               className="text-sm text-white hover:text-gray-400">
-                Privacy Policy
-              
-            </Link>
-          </li>
-          <li>
-            <Link href="#"
-               className="text-sm text-white hover:text-gray-400">
-                Support
-              
-            </Link>
-          </li>
         </ul>
-      </div>
-    </footer>
+    </div>
+</footer>
   );
 };
 

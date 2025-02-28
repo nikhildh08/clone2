@@ -28,7 +28,7 @@ export default function Sidebar() {
 
   return (
    
-    <div className="dash-asidebar p-5 pt-5 flex flex-col sticky top-0  " id="sidebar">
+    <div className="dash-asidebar p-5 pt-5 flex flex-col sticky top-0 " id="sidebar">
       <div className="mob-res-h-l flex items-center justify-between">
         <Link href="/dashboard/firstpage/">
           <div className="astro-logo">
@@ -59,22 +59,7 @@ export default function Sidebar() {
             Dashboard
           </Link>
         </li>
-        {/* <li className="menu-dash-li  "><span className="dr-li  flex items-center justify-start">
-                    <i className=""><CgProfile /></i>
-                            <button className="drop-btn">Order History</button></span>
-
-                        <ul className="drop-ul">
-                            <Link href="./interpage/chathis.html" className="a-li">
-                                <li className="drop-li"><i className="fa-solid fa-comment"><IoIosChatbubbles/></i> Chat History</li>
-                            </Link>
-                            <Link href="./interpage/callhist.html" className="a-li">
-                                <li className="drop-li"><i className="fa-solid fa-phone"><IoCall/></i>Call History</li>
-                            </Link>
-                            <Link href="./interpage/storehis.html" class="a-li">
-                                <li className="drop-li"><i className="fa-solid fa-store"><FaStore/></i> Store History</li>
-                            </Link>
-                        </ul>
-                    </li> */}
+       
 
         <li className="menu-dash-li">
           <button
@@ -103,7 +88,7 @@ export default function Sidebar() {
               </li>
               <li className="menu-dash-l">
                 <Link
-                  href="/dashboard/callhist"
+                  href="/dashboard/callhistory"
                   className=" flex items-center space-x-2 text-white  rounded"
                 >
                   <i className="fa-solid fa-phone">
@@ -114,7 +99,7 @@ export default function Sidebar() {
               </li>
               <li className="menu-dash-l">
                 <Link
-                  href="/dashboard/storehis"
+                  href="/dashboard/storehistory"
                   className=" flex items-center space-x-2 text-white  rounded"
                 >
                   <i className="fa-solid fa-store">
@@ -129,7 +114,7 @@ export default function Sidebar() {
 
         <li className="menu-dash-li">
           <Link
-            href="./interpage/earnings.html"
+            href="/dashboard/earningdash"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-solid fa-briefcase">
