@@ -62,10 +62,10 @@ const StoreHistoryCard = () => {
   ]);
 
   return (
-    <div className="calling-his flex items-center justify-between flex-col mx-16 ">
-      <h2 className="wallet-head text-center">Dhwani Astro Store</h2>
+    <div className="calling-his flex items-center justify-between flex-col mx-16 me-1">
+      <h2 className="wallet-head text-center ">Dhwani Astro Store</h2>
 
-      <div className="store-his-box flex items-center flex-wrap py-5">
+      <div className="store-his-box gap-5 flex items-center flex-wrap py-5">
         {storeCards.map((card, index) => (
           <div className="card-store flex flex-col" key={index}>
             <div className="call-top flex items-start justify-between">

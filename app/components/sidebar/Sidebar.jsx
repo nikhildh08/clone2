@@ -125,7 +125,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/wallet.html"
+            href="/dashboard/wallet"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="">
@@ -136,7 +136,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/offer.html"
+            href="/dashboard/offer"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-solid fa-gift">
@@ -147,7 +147,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/remedy.html"
+            href="/dashboard/remedy"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-regular fa-hourglass-half">
@@ -158,7 +158,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/waitlist.html"
+            href="/dashboard/waitlist"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-regular fa-hourglass-half">
@@ -169,7 +169,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/waitlist.html"
+            href="/dashboard/myreview"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-regular fa-hourglass-half">
@@ -180,7 +180,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/livent.html"
+            href="/dashboard/livevent"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="fa-brands fa-google-play">
@@ -191,7 +191,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/myfollow.html"
+            href="/dashboard/myfollower"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="">
@@ -213,7 +213,7 @@ export default function Sidebar() {
         </li>
         <li className="menu-dash-li">
           <Link
-            href="./interpage/setting.html"
+           href="/dashboard/wallet"
             className="menu-dash-links flex items-center justify-start"
           >
             <i className="">
