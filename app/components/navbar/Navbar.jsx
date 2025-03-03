@@ -6,7 +6,7 @@ import styles from "@/app/components/navbar/navbar.module.css";
 
 export default function Navbar() {
   return (
-    <header className={`${styles.container} flex items-center justify-center`}>
+    <header className={`${styles.container}  flex items-center justify-center `}>
       <div className={styles.astrohead}>
         <div className="flex items-center justify-between w-full ">
           <div className="flex items-center">
@@ -52,5 +52,9 @@ export default function Navbar() {
         </div>
       </div>
     </header>
+ 
   );
 }
+
+
+  

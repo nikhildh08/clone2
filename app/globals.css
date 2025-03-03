@@ -61,14 +61,14 @@ body {
 }
 
 .menu-dash-li:hover {
-    padding: .5rem 1rem;
+    /* padding: .5rem 1rem; */
     border-radius: 12px;
-    background-color: #22112e83;
+    background-color: #a064ce83;
     transform: scale(1.08) translateY(-3px);
     color: #fff;
 }
 .menu-dash-l:hover{
-    padding: .25rem .5rem;
+    padding: .25rem .1rem;
     border-radius: 12px;
     background-color: #d2bae283;
     transform: scale(1.08) translateY(-3px);
@@ -1085,7 +1085,9 @@ body {
 
 .card-call {
     border: 1px solid #00000018;
-    width: 31%;
+    /* width: 1/4; */
+    width: 20vw;
+    width: 20vw;
     padding: .5rem;
     background: #ffffff6e;
     border-radius: 10px;
@@ -1096,7 +1098,9 @@ body {
 
 .card-chat {
     border: 1px solid #00000018;
-    width: 31%;
+    /* width: 31%; */
+    /* width:1/4; */
+    width: 20vw;
     padding: .5rem;
     background: #ffffff6e;
     border-radius: 10px;
@@ -1107,7 +1111,9 @@ body {
 
 .card-store {
     border: 1px solid #00000018;
-    width: 25%;
+    /* width: 1/4; */
+    width: 20vw;
+    /* width: full; */
     padding: .5rem;
     background: #ffffff6e;
     border-radius: 10px;
@@ -1118,7 +1124,8 @@ body {
 
 .card-rem {
     border: 1px solid #00000018;
-    width: 25%;
+    /* width: 1/4; */
+    width: 20vw;
     padding: .5rem;
     background: #ffffff6e;
     border-radius: 10px;
@@ -1130,7 +1137,7 @@ body {
 
 .card-review {
     border: 1px solid #00000018;
-    width: 25%;
+    width: 20vw;
     padding: .5rem;
     background: #ffffff6e;
     border-radius: 10px;
@@ -1138,6 +1145,8 @@ body {
     gap: .25rem;
     height: 15rem !important;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-rev {

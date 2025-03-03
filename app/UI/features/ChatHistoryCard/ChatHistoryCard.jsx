@@ -64,12 +64,12 @@ const ChatHistoryCard = () => {
   ]);
 
   return (
-    <div className="calling-his flex items-center justify-center flex-col mx-16 me-40 ">
+    <div className="calling-his flex flex-wrap items-center justify-center flex-col mx-16 me-40 ">
       <h2 className="wallet-head text-center">Chat History</h2>
 
-      <div className="calling-his-box flex items-center flex-wrap justify-between py-5 gap-4">
+      <div className="  items-center flex flex-wrap  justify-between py-5 gap-4">
         {chatCards.map((card, index) => (
-          <div className="card-chat flex flex-col" key={index}>
+          <div className="card-chat flex flex-col " key={index}>
             <div className="call-top flex items-center justify-between">
               <div className="cal-od-id flex items-center justify-between flex-col">
                 <span className="odr-sp">Order ID :</span>
