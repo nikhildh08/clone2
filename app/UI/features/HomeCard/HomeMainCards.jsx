@@ -35,22 +35,22 @@ const HomeMainCards = () => {
       },
       cardClass: 'bg-green-500 bg-opacity-25'
     },
-    {
-      title: 'Important Policies',
-      content: (
-        <>
-          Dear Astrologers, <br /> Please adhere to the following policies to ensure a seamless and professional experience for everyone:
-          <br />
-          - Always maintain the privacy and confidentiality of your clients' information and readings. <br />
-          - Do not disclose personal details or insights without explicit consent. <br />
-          - Clearly communicate your service fees upfront to avoid misunderstandings. <br />
-          - No hidden charges or unsolicited upselling of services. <br />
-          Warm regards, <br />
-          <b>Dhwani Astro</b>
-        </>
-      ),
-      cardClass: 'bg-blue-500 bg-opacity-25'
-    }
+    // {
+    //   title: 'Important Policies',
+    //   content: (
+    //     <>
+    //       Dear Astrologers, <br /> Please adhere to the following policies to ensure a seamless and professional experience for everyone:
+    //       <br />
+    //       - Always maintain the privacy and confidentiality of your clients' information and readings. <br />
+    //       - Do not disclose personal details or insights without explicit consent. <br />
+    //       - Clearly communicate your service fees upfront to avoid misunderstandings. <br />
+    //       - No hidden charges or unsolicited upselling of services. <br />
+    //       Warm regards, <br />
+    //       <b>Dhwani Astro</b>
+    //     </>
+    //   ),
+    //   cardClass: 'bg-blue-500 bg-opacity-25'
+    // }
   ];
 
   return (
