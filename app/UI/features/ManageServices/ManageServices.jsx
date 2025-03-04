@@ -1,4 +1,5 @@
-
+import Switch from '@mui/material/Switch';
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 const ManageServices = () => {
   // Define the panel data
   const panels = [
@@ -46,12 +47,13 @@ const ManageServices = () => {
               <span className="p-a-t flex items-start flex-col">
                 <span className="p-a-type">Status</span>
                 <div className="form-check form-switch">
-                  <input
+                  {/* <input
                     className="form-check-input"
                     type="checkbox"
                     role="switch"
                     id={panel.id}
-                  />
+                  /> */}
+                  <Switch {...label} />
                 </div>
               </span>
             </div>

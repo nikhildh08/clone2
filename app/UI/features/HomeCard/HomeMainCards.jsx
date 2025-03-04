@@ -1,5 +1,6 @@
 // import styles from "@/app/dashboard/firstpage/firstpage.module.css";
-
+import Switch from '@mui/material/Switch';
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 const HomeMainCards = () => {
   // Array of card data
   const cards = [
@@ -84,12 +85,13 @@ const HomeMainCards = () => {
                 <div key={idx} className="po-call flex items-center justify-between">
                   <span className="po-sp flex items-center">{po.label}</span>
                   <div className="form-check form-switch">
-                    <input
+                    {/* <input
                       className="form-check-input"
                       type="checkbox"
                       role="switch"
                       id={po.id}
-                    />
+                    /> */}
+                    <Switch {...label} />
                   </div>
                 </div>
               ))}
