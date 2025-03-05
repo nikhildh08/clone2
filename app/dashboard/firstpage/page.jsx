@@ -5,7 +5,7 @@ import HomeMainCards from "@/app/UI/features/HomeCard/HomeMainCards";
 import ManageServices from "@/app/UI/features/ManageServices/ManageServices";
 
 
-export default function page() {
+export default function Firstpage() {
   return (
     <>
       <div className="mx-16 me-40">
