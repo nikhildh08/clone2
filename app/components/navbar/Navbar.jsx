@@ -44,7 +44,7 @@ export default function Navbar() {
               <Image
                 src="/user2.png"
                 alt="profile"
-                width={35} // Width in pixels
+                width={35} 
                 height={35}
               />
             </Link>
