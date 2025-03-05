@@ -29,7 +29,7 @@ export default function LoginPage() {
         <meta property="og:url" content="https://yourwebsite.com/login" />
         <link rel="canonical" href="https://yourwebsite.com/login" />
       </Head>
-      <body>
+      <div className={styles.nbody}>
         <div className={styles.container}>
           {/* Header */}
           <header className={styles.header}>
@@ -126,7 +126,7 @@ export default function LoginPage() {
             </div>
           </footer>
         </div>
-      </body>
+      </div>
     </>
   );
 }

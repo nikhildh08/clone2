@@ -16,7 +16,7 @@ import { AiFillAndroid } from "react-icons/ai";
 
 export default function LoginPage() {
   return (
-    <body>
+    <div className={styles.nboby}>
       <div className={styles.container}>
         {/* Header */}
         <header className={styles.header}>
@@ -114,6 +114,6 @@ export default function LoginPage() {
           </div>
         </footer>
       </div>
-    </body>
+    </div>
   );
 }

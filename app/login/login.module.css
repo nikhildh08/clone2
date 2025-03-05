@@ -9,7 +9,7 @@
     font-weight: 400;
 } */
 
-body {
+.nbody {
     height: 100vh;
     display: flex;
     justify-content: center;
