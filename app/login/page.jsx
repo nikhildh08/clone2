@@ -1,66 +1,119 @@
+"use client";
 
-
-// import { useRouter } from "next/navigation"; // Import useRouter
-import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
+import styles from "@/app/login/login.module.css";
+import {
+  FaAndroid,
+  FaFacebookF,
+  FaInstagram,
+  FaQuora,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
+// import { SiAndroid } from "react-icons/si";
+import { AiFillAndroid } from "react-icons/ai";
 
 export default function LoginPage() {
-//   const router = useRouter(); // Initialize Next.js router
-
   return (
-    <>
-      <Head>
-        <title>Login Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-
-      <div className="flex h-screen items-center justify-center bg-gray-100">
-    
-
-        <div className="w-full md:w-1/3 bg-white shadow-lg rounded-lg p-8">
-          <div className="text-center mb-6">
-            <Image src="/logo.png" alt="Logo" width={120} height={50} className="mx-auto" />
-            <h2 className="text-2xl font-semibold mt-3">Login</h2>
-            <span className="text-gray-500">Login to your account</span>
+    <body>
+      <div className={styles.container}>
+        {/* Header */}
+        <header className={styles.header}>
+          <div className={styles.headerInner}>
+            <div className={styles.mobileHeader}>
+              <div className={styles.logo}>
+                <Image
+                  src="/logo.png"
+                  alt="loading..."
+                  width={130}
+                  height={50}
+                  className={styles.logoImage}
+                />
+              </div>
+            </div>
+            <nav className={styles.navLinks}>
+              <Link href="#contact" className={styles.profile}>
+                <Image
+                  src="/user2.png"
+                  width={35}
+                  height={35}
+                  alt=""
+                  className={styles.profileImage}
+                />
+                <h5 className={styles.signInText}>SignIN</h5>
+              </Link>
+            </nav>
           </div>
+        </header>
 
-          <form action="/dashboard/firstpage" className="space-y-4">
-            <div>
-              <label htmlFor="username" className="block text-sm font-medium text-gray-700">
-                Email:
-              </label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Email or Phone number.."
-                required
-                className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-              />
-            </div>
+        {/* Login Form */}
+        <div className={styles.loginContainer}>
+          <div className={styles.loginBox}>
+            <h2>Login</h2>
+            <span>Enter the credentials.</span>
+          </div>
+          <form action="/dashboard/firstpage/" method="POST">
+            <label htmlFor="username">Email:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Email or Phone number.."
+              required
+            />
 
-            <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                Password:
-              </label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-              />
-            </div>
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" required />
 
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white font-medium py-2 rounded-lg hover:bg-blue-700 transition duration-300"
-            >
-              Login
-            </button>
+            <button type="submit">Login</button>
           </form>
         </div>
+
+        {/* Footer */}
+        <footer className={styles.footer}>
+          <div className={styles.socialIcons}>
+            <AiFillAndroid size={25} className="text-white" />
+
+            <FaFacebookF size={25} className="text-white" />
+            <FaInstagram size={25} className="text-white" />
+            <FaQuora size={25} className="text-white" />
+            <FaYoutube size={25} className="text-white" />
+            <FaXTwitter size={25} className="text-white" />
+          </div>
+
+          <div className={styles.footerLinks}>
+            <ul className={styles.footerList}>
+              <li>
+                <Link href="#" className={styles.footerLink}>
+                  Cookies
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.footerLink}>
+                  Terms &amp; Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.footerLink}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={styles.footerLink}>
+                  Support
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div className={styles.footerBox}>
+            <p className={styles.footerText}>
+              Copyright &copy; 2023. Made with ❤️ by Dhwani Astro.
+            </p>
+          </div>
+        </footer>
       </div>
-    </>
+    </body>
   );
 }
