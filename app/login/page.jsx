@@ -8,6 +8,33 @@ import styles from "@/app/login/login.module.css";
 import { AiFillAndroid } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaQuora, FaYoutube, FaXTwitter } from "react-icons/fa6";
 
+export const metadata = {
+  title: "Login - Dhwani Astro",
+  description: "Securely log in to your Dhwani Astro account.",
+  openGraph: {
+    title: "Login - Dhwani Astro",
+    description: "Securely log in to your Dhwani Astro account.",
+    url: "https://dashboard-panale-55f259im3-nikhildh08s-projects.vercel.app/", // Change this to your actual Vercel URL
+    siteName: "Dhwani Astro",
+    images: [
+      {
+        url: "https://shop.dhwaniastro.com/cdn/shop/files/logo.png?height=628&pad_color=ffffff&v=1704542290&width=1200", // Upload an image to your site
+        width: 1200,
+        height: 630,
+        alt: "Dhwani Astro Login Page",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Login - Dhwani Astro",
+    description: "Securely log in to your Dhwani Astro account.",
+    images: ["https://shop.dhwaniastro.com/cdn/shop/files/logo.png?height=628&pad_color=ffffff&v=1704542290&width=1200"], // Same as OG image
+  },
+};
+
+
 export default function LoginPage() {
   const router = useRouter(); // ✅ Use Next.js router
   const [formData, setFormData] = useState({ username: "", password: "" });
