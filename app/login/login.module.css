@@ -178,8 +178,10 @@ gap: 2rem;
     padding: .5rem 1rem;
     border-top: .5px rgba(255, 255, 255, 0.545) outset;
     background: #2f1254;
-    margin-top: auto;
+    margin-top:60px;
     width: 100%;
+    /* margin-bottom:1px; */
+    margin-bottom: 0%;
 }
 .footerList{
     display: flex;

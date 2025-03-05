@@ -10,30 +10,22 @@ import { FaFacebookF, FaInstagram, FaQuora, FaYoutube, FaXTwitter } from "react-
 
 export default function LoginPage() {
   const router = useRouter(); // ✅ Use Next.js router
-  const [formData, setFormData] = useState({
-    username: "",
-    password: "",
-  });
+  const [formData, setFormData] = useState({ username: "", password: "" });
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevents default form submission
+    e.preventDefault(); // Prevent default form submission
 
-    // You can call an API to authenticate the user here.
-    // Example:
-    // const res = await fetch('/api/login', {
-    //   method: 'POST',
-    //   body: JSON.stringify(formData),
-    // });
-
-    // if (res.ok) {
-    router.push("/dashboard"); // ✅ Redirects to dashboard after login
-    // } else {
-    //   alert('Invalid login');
-    // }
+    // Dummy authentication logic (Replace with actual API call)
+    if (formData.username === "admin" && formData.password === "password") {
+      router.push("/dashboard"); // ✅ Redirect to dashboard
+    } else {
+      setError("Invalid username or password.");
+    }
   };
 
   return (
@@ -62,7 +54,7 @@ export default function LoginPage() {
             <h2>Login</h2>
             <span>Enter the credentials.</span>
           </div>
-          <form onSubmit={handleSubmit}> {/* ✅ No action attribute */}
+          <form onSubmit={handleSubmit}> {/* ✅ Removed action & method */}
             <label htmlFor="username">Email:</label>
             <input
               type="text"
@@ -75,6 +67,8 @@ export default function LoginPage() {
 
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" required onChange={handleChange} />
+
+            {error && <p style={{ color: "red" }}>{error}</p>} {/* Show error if login fails */}
 
             <button type="submit">Login</button>
           </form>
